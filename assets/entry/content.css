@@ -9,9 +9,8 @@
 }
 
 .e-content del {
-  color: var(--nz-c-text-light);
   text-decoration: line-through;
-  text-decoration-color: var(--yue-c-accent);
+  text-decoration-color: var(--nz-c-text-strong);
 }
 
 .e-content a:hover,

@@ -16,7 +16,7 @@
   color: var(--nz-c-text);
   background-color: var(--nz-c-bg);
   border: 1px solid rgba(var(--nz-rc-invert), 0.2);
-  border-left: solid 3px rgb(var(--t-rc-primary));
+  border-left: solid 3px rgb(var(--nz-rc-accent));
   padding: 0 10px;
   font-size: 16px;
   font-family: var(--nz-f-base);
@@ -36,9 +36,9 @@
   padding: 0 20px;
   font-size: 14px;
   height: 48px;
-  color: rgb(var(--t-on-primary));
-  background-color: rgb(var(--t-rc-primary));
-  border: 1px solid rgb(var(--t-rc-primary));
+  color: rgb(var(--nz-rc-base));
+  background-color: rgb(var(--nz-rc-accent));
+  border: 1px solid rgb(var(--nz-rc-accent));
   font-weight: 600;
   cursor: pointer;
   transition: background-color,color .2s ease;

@@ -14,13 +14,13 @@
   --nz-c-bg-weak: #f9f9f9;
   --nz-c-bg-mute: #f1f1f1;
 
-  --nz-f-sys-sans: -apple-system, "Segoe UI", Oxygen, Ubnztu, "Droid Sans", "Helvetica Neue";
-  --nz-f-sys-serif: Georgia, Palatino, "Times New Roman", Times;
+  --nz-f-sys-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --nz-f-sys-serif: "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --nz-f-cjk: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
-  --nz-f-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
+  --nz-f-mono: ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   --nz-f-base: roboto, var(--nz-f-sys-sans), var(--nz-f-cjk), sans-serif;
-  --nz-f-heading: nunito-sans, var(--nz-f-sys-sans), var(--nz-f-cjk), sans-serif;
+  --nz-f-heading: var(--nz-f-base);
 
   /* usually used for links */
   --nz-rc-accent: var(--t-rc-primary);
@@ -62,7 +62,7 @@
 }
 
 .yue {
-  --yue-f-base: merriweather, var(--nz-f-sys-serif), var(--nz-f-cjk), serif;
+  --yue-f-base: merriweather, var(--nz-f-base);
   --yue-f-quote: var(--yue-f-base);
   --yue-f-heading: var(--nz-f-heading);
   --yue-f-mono: var(--nz-f-mono);

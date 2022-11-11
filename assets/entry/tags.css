@@ -14,13 +14,16 @@
 .entry-tags a:before {
   content: '#';
   font-weight: 900;
-  color: rgba(var(--nz-rc-invert), 0.1);
+  color: rgba(var(--nz-rc-invert), 0.25);
   margin-right: 2px;
 }
 .entry-tags a:hover {
   text-decoration: none;
-  color: rgba(var(--t-on-primary), 0.86);
-  background: rgba(var(--t-rc-primary), 0.86);
+  color: rgba(var(--nz-rc-base), 1);
+  background: rgba(var(--nz-rc-invert), 1);
+}
+.entry-tags a:hover:before {
+  color: rgba(var(--nz-rc-base), 0.5);
 }
 .entry-tags a + a {
   margin-left: 4px;

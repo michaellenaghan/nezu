@@ -1,17 +1,27 @@
 <div class="inner">
-  <div class="info h-card">
-    {% if site.logo %}
-      <a class="info_logo" href="{{ linkify('/') }}">
-        <img class="u-photo" src="{{ site.logo.src|thumbnail('ss') }}" alt="{{ site.name }}" width="120" height="120">
-      </a>
-    {% endif %}
+  <div class="info">
     <div class="info_main">
-      <h1 class="info_title"><a class="p-name u-url" rel="me" href="{{ linkify('/') }}">{{ site.name }}</a></h1>
+      {% if nezu and nezu.logo %}
+        <a class="info_logo" {% if nezu.url%}href="{{ nezu.url }}"{% else %}href="/"{% endif%}>
+          {% if nezu.logo.light %}
+            <img class="light-logo" src="{{ nezu.logo.light|thumbnail('m') }}" alt="{{ site.name }}" height="64" />
+          {% endif %}
+          {% if nezu.logo.dark %}
+            <img class="dark-logo" src="{{ nezu.logo.dark|thumbnail('m') }}" alt="{{ site.name }}" height="64" />
+          {% endif %}
+        </a>
+      {% elif site.logo %}
+        <a class="info_logo" href="{{ linkify('/') }}">
+          <img src="{{ site.logo.src|thumbnail('m') }}" alt="{{ site.name }}" height="64">
+        </a>
+      {% else %}
+        <h1 class="info_title"><a class="p-name" rel="me" href="{{ linkify('/') }}">{{ site.name }}</a></h1>
+      {% endif %}
       {% if site.summary %}
         <h2 class="info_subtitle p-note">{{ site.summary }}</h2>
       {% endif %}
       <div class="info_social">
-        {% if features.post %}
+        {% if features.subscriber and features.post %}
           <div class="info_subscribe">
             <button class="js-subscribe">Subscribe</button>
           </div>

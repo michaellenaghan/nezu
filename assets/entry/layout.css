@@ -53,7 +53,7 @@ time.dt-published {
 .entry-link {
   padding: 1em;
   background: var(--nz-c-bg-mute);
-  border-left: 4px solid rgba(var(--t-rc-primary), 0.6);
+  border-left: 4px solid rgba(var(--nz-rc-accent), 0.6);
 }
 
 .entry-audio audio {
@@ -110,15 +110,10 @@ time.dt-published {
 .prev-subject .item h3 {
   margin: 0.2em 0;
   font-size: 1.3em;
-  color: var(--nz-c-text-strong);
 }
 
 .prev-subject .item-subtitle {
   font-size: 1em;
-}
-
-.prev-subject a:hover h3 {
-  color: var(var(--nz-c-accent));
 }
 
 .prev-subject .item-meta {

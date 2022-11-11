@@ -1,11 +1,11 @@
 # NEZU
 
 NEZU is a Typlog built-in theme. It is a single column theme. This theme supports
-both blog posts and podcast episodes.
+both blog posts and podcast episodes. (This is a modified version of the theme.)
 
 ## Install
 
-Head over to **Settings → Themes & Design** and select **Nezu** theme.
+Head over to **Settings → Themes & Design** and select **Nezu - Modified** theme.
 
 ## Configure
 
@@ -22,34 +22,38 @@ Create an **asset** JSON in admin portal, set slug to `_config/nezu`. Here is an
     "css_files": [],
     "primary_nav": [],
     "secondary_nav": [],
+    "foot_copy: ",  // html for the footer
     "foot_nav": []
 }
 ```
 
-Here is our demo's configration:
+The `primary_nav` and `secondary_nav` should look like this:
+
+```json
+  "primary_nav": [
+    {
+      "title": "...",
+      "links": [
+        {"title": "...", "subtitle": "...", "url": "..."},
+        {"title": "...", "subtitle": "...", "url": "..."}
+      ]
+    },
+    {"title": "...", "url": "..."}
+  ],
+```
+
+Here's the demo's configration:
 
 ```json
 {
   "logo": {
-    "dark": "https://typlog.com/assets/logo-white.svg",
-    "light": "https://typlog.com/assets/logo-black.svg"
+    "dark": "https://static.dazzit.com/logos/white.png",
+    "light": "https://static.dazzit.com/logos/black.png"
   },
-  "primary_nav": [
-    {
-      "title": "Show Cases",
-      "links": [
-        {"title": "By tag", "subtitle": "List of posts tagged with template", "url": "/topic/template/"},
-        {"title": "By author", "subtitle": "Articles and podcasts by cat", "url": "/by/cat/"}
-      ]
-    },
-    {"title": "Elements", "url": "/blog/elements"}
-  ],
-  "secondary_nav": [
-    {"title": "Source", "url": "https://github.com/typlog/nezu"}
-  ]
+  "foot_copy": "&copy; Dazzit! Corp. / Developer of <a href='https://www.nextaction.app/'>NextAction</a>"
 }
 ```
 
 ## License
 
-Copyright of the design and code is reserved.
+Copyright of the design and code is reserved by Typlog.

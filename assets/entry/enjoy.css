@@ -39,6 +39,9 @@
 button.enjoy:hover {
   cursor: pointer;
 }
+button.enjoy:hover:after {
+  color: white;
+}
 button.enjoy:after {
   content: "\2665";
   user-select: none;
@@ -53,15 +56,15 @@ button.enjoy:after {
   align-items: center;
   overflow: hidden;
   font-size: 20px;
-  opacity: 0;
-  color: rgb(230, 72, 72);
+  opacity: 1;
+  color: var(--nz-c-text-light);
 }
 button.enjoy:hover:after {
   animation: heartbeat 1s infinite;
 }
 button.enjoy:disabled {
-  border-color: rgb(var(--t-rc-primary));
-  background-color: rgb(var(--t-rc-primary));
+  border-color: rgb(var(--nz-rc-accent));
+  background-color: rgb(var(--nz-rc-accent));
   color: #fff;
   transition-property: color, background-color;
   transition-delay: 0s, 1s;
@@ -84,12 +87,12 @@ button.enjoy i.has-value {
   display: inline-block;
   text-decoration: none;
   color: #767676;
-  background-color: transparent;
-  border: 3px solid var(--nz-c-divider);
+  background-color: var(--nz-c-bg-weak);
+  border: 3px solid var(--nz-c-bg-weak);
   line-height: 30px;
   font-size: 13px;
   font-weight: 600;
-  padding: 0 20px;
+  padding: 0 13px;
   cursor: pointer;
   transition: background-color, color 0.2s ease;
   text-transform: uppercase;
@@ -97,6 +100,8 @@ button.enjoy i.has-value {
 }
 
 .entry-enjoy button:hover {
+  background-color: rgb(230, 72, 72);
+  border-color: rgb(230, 72, 72);
   cursor: pointer;
   outline: initial;
 }

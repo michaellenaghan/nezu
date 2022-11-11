@@ -1,13 +1,13 @@
 {% set podcast = site.podcast %}
 <div class="inner">
-  <div class="info h-card">
+  <div class="info">
     {% if podcast.image %}
       <a class="info_logo" href="{{ linkify('/') }}">
-        <img class="u-photo" src="{{ podcast.image|thumbnail('ss') }}" alt="{{ podcast.title }}" width="120" height="120">
+        <img src="{{ podcast.image|thumbnail('ss') }}" alt="{{ podcast.title }}" width="120" height="120">
       </a>
     {% endif %}
     <div class="info_main">
-      <h1 class="info_title"><a class="p-name u-url" rel="me" href="{{ linkify('/') }}">{{ podcast.title }}</a></h1>
+      <h1 class="info_title"><a class="p-name" rel="me" href="{{ linkify('/') }}">{{ podcast.title }}</a></h1>
       {% if podcast.subtitle %}
         <h2 class="info_subtitle p-note">{{ podcast.subtitle }}</h2>
       {% endif %}

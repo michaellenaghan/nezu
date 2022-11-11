@@ -1,12 +1,12 @@
 {
-  "name": "nezu",
-  "name#ja": "根津",
-  "name#zh": "根津",
-  "author": "Typlog",
-  "repo": "typlog/nezu",
-  "version": "0.6.0",
+  "name": "nezu - modified",
+  "name#ja": "根津 - modified",
+  "name#zh": "根津 - modified",
+  "author": "Typlog (modified by Michael Lenaghan)",
+  "repo": "michaellenaghan/nezu",
+  "version": "0.1.0",
   "tags": ["blog", "podcast"],
   "images": [
-    "https://user-images.githubusercontent.com/290496/185733933-ed6ad0a0-0634-47bd-8a45-2e38e1d8b5ae.png"
+    "https://user-images.githubusercontent.com/176481/201253970-4a256f6b-0f67-49da-a03b-2be4d1a291c4.jpg"
   ]
 }

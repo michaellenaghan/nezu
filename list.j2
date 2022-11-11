@@ -8,18 +8,14 @@
   {% for src in nezu.css_files %}
     <link rel="stylesheet" href="{{ src }}">
   {% endfor %}
-{% else %}
-  <link rel="preconnect" href="https://use.typkit.net" crossorigin>
-  <link rel="stylesheet" href="https://use.typekit.net/zbe5yhf.css">
 {% endif %}
 {% endblock %}
 
-
 {% macro render_author_head(user) %}
-  <div class="p-author h-card" itemscope itemtype="http://schema.org/Person">
+  <div class="p-author" itemscope itemtype="http://schema.org/Person">
     {% if user.avatar %}
       <div class="author_image">
-        <img class="u-photo" itemprop="image" src="{{ user.avatar|thumbnail('ss') }}" alt="{{ user.name }}">
+        <img itemprop="image" src="{{ user.avatar|thumbnail('ss') }}" alt="{{ user.name }}">
       </div>
     {% endif %}
     <div class="author_main">
@@ -39,7 +35,7 @@
 {% endmacro %}
 
 {% macro render_tag_head(tag) %}
-  <h1 class="info_title">{{ tag.title }}</h1>
+  <h1 class="info_title">#{{ tag.title }}</h1>
   {% if tag.summary %}<h2 class="info_subtitle">{{ tag.summary }}</h2>{% endif %}
 {% endmacro %}
 
@@ -47,9 +43,19 @@
   {% include "./_partials/head.j2" %}
   <div class="body">
     {% if page.type == 'tag' %}
-      <div class="info">
-        <div class="inner">
-          {{ render_tag_head(page.topic) }}
+      <div class="inner">
+        <div class="info">
+          <div class="info_main">
+            {{ render_tag_head(page.topic) }}
+            <div class="info_social">
+              {% if features.subscriber and features.post %}
+                <div class="info_subscribe">
+                  <button class="js-subscribe">Subscribe</button>
+                </div>
+              {% endif %}
+              {{ render_social_icons(site, site.socials.email) }}
+            </div>
+          </div>
         </div>
       </div>
     {% elif page.type == 'author' %}

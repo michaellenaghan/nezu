@@ -8,9 +8,6 @@
   {% for src in nezu.css_files %}
     <link rel="stylesheet" href="{{ src }}">
   {% endfor %}
-{% else %}
-  <link rel="preconnect" href="https://use.typkit.net" crossorigin>
-  <link rel="stylesheet" href="https://use.typekit.net/zbe5yhf.css">
 {% endif %}
 {% endblock %}
 
@@ -20,16 +17,10 @@
     {% include "./_partials/site_info.j2" %}
     <div class="main">
       <div class="inner">
-        {% set subjects = query.latest_subjects(count=10) %}
+        {% set subjects = query.latest_subjects(count=1000) %}
         {% for subject in subjects %}
           {{ render_item(site, subject) }}
         {% endfor %}
-        {% if subjects|count == 10 %}
-          {% set last = subjects|last %}
-          <div class="home-more">
-            <a href="{{ linkify(site.list_url) }}{{last.published_at.year}}/#item-{{last.id}}">ARCHIVE</a>
-          </div>
-        {% endif %}
       </div>
     </div>
   </div>

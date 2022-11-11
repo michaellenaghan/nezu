@@ -1,3 +1,5 @@
+@import url(https://fonts.bunny.net/css?family=merriweather:400,400i,700,700i|roboto:300,300i,400,400i,500,500i,700,700i);
+
 html {
   scroll-behavior: smooth;
 }
@@ -45,7 +47,8 @@ ul.links ul {
 }
 
 .inner {
-  max-width: 860px;
+  max-width: 750px;
+  max-width: 75ch;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -78,5 +81,5 @@ ul.links ul {
   color: var(--nz-c-foot-text);
   background-color: var(--nz-c-foot-bg);
   margin-top: 48px;
-  padding: 24px 24px;
+  padding: 24px 24px 6px;
 }

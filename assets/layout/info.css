@@ -1,7 +1,7 @@
 .info {
   display: flex;
   align-items: center;
-  padding: 100px 0 40px;
+  padding: 100px 0 50px;
 }
 
 .info_logo {
@@ -14,7 +14,8 @@
 
 .info_logo img {
   box-sizing: border-box;
-  max-width: 100%;
+  width: auto;
+  height: 64px;
   vertical-align: middle;
 }
 
@@ -23,11 +24,12 @@
 }
 
 .info_title {
-  line-height: 1.2;
+  line-height: 1;
   font-size: 36px;
   font-weight: 400;
   margin: 0;
   color: var(--nz-c-text-strong);
+  letter-spacing: -1px;
 }
 
 .info_title a {
@@ -73,6 +75,7 @@
 .info_social {
   display: flex;
   align-items: center;
+  margin-top: 8px;
 }
 
 .info_social a {

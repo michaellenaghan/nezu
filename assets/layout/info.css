@@ -37,6 +37,10 @@
   text-decoration: none;
 }
 
+.info_title a:hover {
+  color: var(--nz-c-accent);
+}
+
 .info_subtitle {
   margin: 0 0 10px;
   font-size: 22px;

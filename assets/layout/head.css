@@ -32,6 +32,10 @@
   font-family: var(--nz-f-sys-sans), sans-serif;
 }
 
+.head_logo > a:hover {
+  color: var(--nz-c-accent);
+}
+
 .head_logo img {
   height: calc(var(--nz-s-head-height) - 20px);
 }

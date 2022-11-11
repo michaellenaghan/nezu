@@ -3,7 +3,7 @@
 }
 
 .e-content a {
-  color: var(--nz-c-text-strong);
+  /* color: var(--nz-c-text-strong); */
   text-decoration: underline;
   text-decoration-color: var(--yue-c-accent);
 }

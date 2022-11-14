@@ -42,7 +42,7 @@
 }
 
 .info_subtitle {
-  margin: 0 0 10px;
+  margin: 4px 0 0;
   font-size: 22px;
   font-weight: 300;
   color: var(--nz-c-text-light);

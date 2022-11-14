@@ -4,6 +4,14 @@
   padding-right: env(safe-area-inset-right);
 }
 
+.site-foot a {
+  color: rgb(var(--t-rc-secondary));
+}
+
+.site-foot a:hover {
+  color: rgba(var(--t-rc-secondary), 0.9);
+}
+
 .site-foot_copy {
   font-weight: 700;
   opacity: 0.86;

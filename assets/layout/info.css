@@ -113,6 +113,14 @@
   color: var(--nz-c-text-strong);
 }
 
+.info_extra_title:before {
+  content: '#';
+  font-family: var(--nz-f-base);
+  font-weight: 700;
+  color: rgba(var(--nz-rc-invert), 0.25);
+  margin-right: 2px;
+}
+
 .info_extra_subtitle {
   margin: 4px 0 0;
   font-size: 22px;

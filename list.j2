@@ -30,7 +30,7 @@
 {% endmacro %}
 
 {% macro render_tag_head(tag) %}
-  <h1 class="info_extra_title">#{{ tag.title }}</h1>
+  <h1 class="info_extra_title">{{ tag.title }}</h1>
   {% if tag.summary %}<h2 class="info_extra_subtitle">{{ tag.summary }}</h2>{% endif %}
 {% endmacro %}
 

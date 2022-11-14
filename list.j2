@@ -35,26 +35,19 @@
 {% endmacro %}
 
 {% macro render_tag_head(tag) %}
-  <h1 class="info_title">#{{ tag.title }}</h1>
-  {% if tag.summary %}<h2 class="info_subtitle">{{ tag.summary }}</h2>{% endif %}
+  <h1 class="info_extra_title">#{{ tag.title }}</h1>
+  {% if tag.summary %}<h2 class="info_extra_subtitle">{{ tag.summary }}</h2>{% endif %}
 {% endmacro %}
 
 {% block body %}
   {% include "./_partials/head.j2" %}
   <div class="body">
+    {% include "./_partials/site_info.j2" %}
     {% if page.type == 'tag' %}
       <div class="inner">
-        <div class="info">
-          <div class="info_main">
+        <div class="info_extra">
+          <div class="info_extra_main">
             {{ render_tag_head(page.topic) }}
-            <div class="info_social">
-              {% if features.subscriber and features.post %}
-                <div class="info_subscribe">
-                  <button class="js-subscribe">Subscribe</button>
-                </div>
-              {% endif %}
-              {{ render_social_icons(site, site.socials.email) }}
-            </div>
           </div>
         </div>
       </div>
@@ -66,8 +59,6 @@
       </div>
     {% elif page.type == 'audio_list' and site.podcast %}
       {% include "./_partials/podcast_info.j2" %}
-    {% else %}
-      {% include "./_partials/site_info.j2" %}
     {% endif %}
     <div class="main">
       <div class="inner">

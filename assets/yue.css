@@ -1,0 +1,42 @@
+.yue h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 3em;
+}
+  
+.yue h2 {
+    font-size: 1.42em;
+    font-weight: 700;
+    margin-top: 1.42em;
+    margin-bottom: 0.4em;
+}
+  
+.yue h3 {
+    font-size: 1.17em;
+    font-weight: 700;
+    margin-top: 1.41em;
+    margin-bottom: 0.6em;
+}
+  
+.yue h4 {
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 1.4em;
+    margin-bottom: 0.8em;
+}
+
+.yue h5 {
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-top: 1.4em;
+    margin-bottom: 0.8em;
+}
+  
+.yue h6 {
+    font-size: .08em;
+    font-weight: 700;
+    margin-top: 1.4em;
+    margin-bottom: 0.8em;
+}
+  

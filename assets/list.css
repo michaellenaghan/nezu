@@ -24,10 +24,10 @@
 }
 
 .item time {
-  color: var(--nz-c-text-light);
+  color: var(--nz-c-text-mute);
   font-size: 12px;
-  font-weight: 600;
-  font-family: var(--nz-f-sys-sans), sans-serif;
+  font-weight: 400;
+  /* font-family: var(--nz-f-sys-sans), sans-serif; */
   text-transform: uppercase;
   vertical-align: middle;
 }
@@ -38,12 +38,12 @@
 .item.Review h3,
 .item.Episode h3 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 4px 0;
 }
 
 .item.Cover h3 {
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -76,7 +76,7 @@
   color: var(--nz-c-text-light);
   font-size: 18px;
   font-weight: 300;
-  font-family: var(--nz-f-sys-sans), sans-serif;
+  /* font-family: var(--nz-f-sys-sans), sans-serif; */
   text-transform: uppercase;
 }
 
@@ -103,7 +103,7 @@
   border-radius: 16px;
   color: var(--nz-c-text-light);
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 16px;
   vertical-align: middle;
 }
@@ -213,7 +213,7 @@
 .home-more a {
   color: var(--nz-c-text-strong);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -232,8 +232,8 @@
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-size: 14px;
-  font-weight: 600;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 700;
+  /* font-family: var(--nz-f-base), sans-serif; */
   text-transform: uppercase;
   text-decoration: none;
   color: var(--nz-c-text-light);

@@ -28,8 +28,8 @@
   text-decoration: none;
   color: var(--nz-c-text);
   font-size: 16px;
-  font-weight: 900;
-  font-family: var(--nz-f-sys-sans), sans-serif;
+  font-weight: 700;
+  font-family: var(--nz-f-site), sans-serif;
 }
 
 .head_logo > a:hover {
@@ -141,7 +141,7 @@
   display: block;
   font-size: 14px;
   line-height: 1.42;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--nz-c-text);
   transition: color .25s;
   padding: 0.5em 0.8em;

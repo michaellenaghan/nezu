@@ -13,6 +13,7 @@
 }
 
 .site-foot_copy {
+  font-family: var(--nz-f-site), sans-serif;
   font-weight: 700;
   opacity: 0.86;
 }
@@ -86,7 +87,7 @@
 }
 
 .foot_links .link_title {
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--nz-f-heading);
   margin: 0 0 6px;
 }
@@ -105,7 +106,7 @@
 .powered-by {
   color: rgba(255, 255, 255, 0.3);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: right;
 }
 .powered-by a {

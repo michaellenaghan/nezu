@@ -39,7 +39,7 @@
   color: rgb(var(--nz-rc-base));
   background-color: rgb(var(--nz-rc-accent));
   border: 1px solid rgb(var(--nz-rc-accent));
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: background-color,color .2s ease;
   text-transform: uppercase;

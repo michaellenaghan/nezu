@@ -2,14 +2,8 @@
 
 {% from "macros.j2" import render_subject_content, render_subject_license, render_subject_authors %}
 
-{% block style%}
-<link rel="stylesheet" href="https://s3.typlog.com/npm/@typlog/yue@1.0.0/yue.css">
-<link rel="stylesheet" href="{{ static_url }}nezu.css">
-{% if nezu and nezu.css_files %}
-  {% for src in nezu.css_files %}
-    <link rel="stylesheet" href="{{ src }}">
-  {% endfor %}
-{% endif %}
+{% block style %}
+{% include "./_partials/style.j2" %}
 {% endblock %}
 
 {% block body %}

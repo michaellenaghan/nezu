@@ -9,11 +9,11 @@
   color: var(--nz-c-text-light);
   background: var(--nz-c-bg-weak);
   padding: 4px 0.8em;
-  font-weight: 600;
+  font-weight: 700;
 }
 .entry-tags a:before {
   content: '#';
-  font-weight: 900;
+  font-weight: 700;
   color: rgba(var(--nz-rc-invert), 0.25);
   margin-right: 2px;
 }

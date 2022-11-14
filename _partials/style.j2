@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="https://s3.typlog.com/npm/@typlog/yue@1.0.0/yue.css">
+<link rel="stylesheet" href="{{ static_url }}nezu.css">
+{% if site.name == "Dazzit! Corp." %}
+<style>
+@font-face {
+  font-family: 'Specify';
+  src: url('https://static.dazzit.com/fonts/SpecifyNormal-Medium.woff2') format('woff2'), url('/fonts/SpecifyNormal-Medium.woff') format('woff');
+  font-display: fallback;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Specify';
+  src: url('https://static.dazzit.com/fonts/SpecifyNormal-Bold.woff2') format('woff2'), url('/fonts/SpecifyNormal-Bold.woff') format('woff');
+  font-display: fallback;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Specify';
+  src: url('https://static.dazzit.com/fonts/SpecifyNormal-MediumItalic.woff2') format('woff2'), url('/fonts/SpecifyNormal-MediumItalic.woff') format('woff');
+  font-display: fallback;
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Specify';
+  src: url('https://static.dazzit.com/fonts/SpecifyNormal-BoldItalic.woff2') format('woff2'), url('/fonts/SpecifyNormal-BoldItalic.woff') format('woff');
+  font-display: fallback;
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 700;
+}
+:root {
+  --nz-f-base: var(--nz-f-sys-sans), var(--nz-f-cjk), sans-serif;
+  --nz-f-site: Specify, var(--nz-f-base);
+  --nz-f-heading: Specify, var(--nz-f-base);
+}
+
+.yue {
+  --yue-f-base: var(--nz-f-base);
+  --yue-f-quote: var(--yue-f-base);
+  --yue-f-heading: var(--nz-f-heading);
+  --yue-f-mono: var(--nz-f-mono);
+}
+</style>
+{% elif site.name == "michaell.io" %}
+<style>
+@font-face {
+  font-family: "Bitter";
+  src: url("https://static.michaell.io/fonts/Bitter-VariableFont_wght.ttf") format("truetype");  font-display: fallback;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-weight: 125 950;
+}
+@font-face {
+  font-family: "Bitter";
+  src: url("https://static.michaell.io/fonts/Bitter-Italic-VariableFont_wght.ttf") format("truetype");  font-display: fallback;
+  font-stretch: 75% 125%;
+  font-style: italic;
+  font-weight: 125 950;
+}
+:root {
+  --nz-f-base: Bitter, var(--nz-f-sys-sans), var(--nz-f-cjk), sans-serif;
+  --nz-f-site: var(--nz-f-base);
+  --nz-f-heading: var(--nz-f-base);
+}
+.yue {
+  --yue-f-base: var(--nz-f-base);
+  --yue-f-quote: var(--yue-f-base);
+  --yue-f-heading: var(--nz-f-heading);
+  --yue-f-mono: var(--nz-f-mono);
+}
+</style>
+{% else %}
+<style>
+@import url(https://fonts.bunny.net/css?family=merriweather:400,400i,700,700i|roboto:300,300i,400,400i,500,500i,700,700i);
+
+:root {
+  --nz-f-base: roboto, var(--nz-f-sys-sans), var(--nz-f-cjk), sans-serif;
+  --nz-f-site: var(--nz-f-base);
+  --nz-f-heading: var(--nz-f-base);
+}
+
+.yue {
+  --yue-f-base: merriweather, var(--nz-f-base);
+  --yue-f-quote: var(--yue-f-base);
+  --yue-f-heading: var(--nz-f-heading);
+  --yue-f-mono: var(--nz-f-mono);
+}
+</style>
+{% endif %}

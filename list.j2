@@ -2,13 +2,8 @@
 
 {% from "macros.j2" import render_item, render_navigation %}
 
-{% block style%}
-<link rel="stylesheet" href="{{ static_url }}nezu.css">
-{% if nezu and nezu.css_files %}
-  {% for src in nezu.css_files %}
-    <link rel="stylesheet" href="{{ src }}">
-  {% endfor %}
-{% endif %}
+{% block style %}
+{% include "./_partials/style.j2" %}
 {% endblock %}
 
 {% macro render_author_head(user) %}

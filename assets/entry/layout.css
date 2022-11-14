@@ -38,6 +38,7 @@ h2.p-summary {
 }
 
 time.dt-published {
+  /* font-family: var(--nz-f-sys-sans), sans-serif; */
   text-transform: uppercase;
   vertical-align: middle;
 }

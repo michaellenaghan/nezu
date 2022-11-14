@@ -77,6 +77,15 @@ time.dt-published {
   margin-bottom: 3em;
 }
 
+.h-entry .e-content h1,
+.h-entry .e-content h2,
+.h-entry .e-content h3,
+.h-entry .e-content h4,
+.h-entry .e-content h5,
+.h-entry .e-content h6 {
+  line-height: 1.31;
+}
+
 .entry-block {
   position: relative;
   display: flex;

@@ -39,4 +39,13 @@
     margin-top: 1.4em;
     margin-bottom: 0.8em;
 }
-  
+
+.yue div code,
+.yue div tt {
+    /* border-radius: 3px; */
+    /* font-family: var(--yue-f-mono); */
+    font-size: 0.86em;
+    font-weight: 500;
+    /* padding: 3px 3px; */
+    /* word-wrap: break-word; */
+}

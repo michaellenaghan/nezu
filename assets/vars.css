@@ -51,9 +51,9 @@
 
 :root {
   --nz-c-text: rgba(var(--nz-rc-invert), 0.82);
-  --nz-c-text-light: rgba(var(--nz-rc-invert), 0.58);
+  --nz-c-text-light: rgba(var(--nz-rc-invert), 0.44);
   --nz-c-text-strong: rgba(var(--nz-rc-invert), 0.94);
-  --nz-c-text-mute: rgba(var(--nz-rc-invert), 0.33);
+  --nz-c-text-mute: rgba(var(--nz-rc-invert), 0.23);
   --nz-c-divider: rgba(var(--nz-rc-invert), 0.08);
   --nz-c-divider-light: rgba(var(--nz-rc-invert), 0.04);
   --nz-c-accent: rgb(var(--nz-rc-accent));

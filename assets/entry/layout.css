@@ -10,7 +10,7 @@
 }
 
 h1.p-name {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 8px;
@@ -28,8 +28,8 @@ h2.p-summary {
 .entry-meta {
   vertical-align: middle;
   color: var(--nz-c-text-mute);
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 .entry-meta a {
   text-decoration: none;

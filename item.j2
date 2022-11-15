@@ -23,6 +23,7 @@
         {% if page.type == 'audio' %}
           {{ render_subject_authors(site, page) }}
         {% endif %}
+        {% if page.type == 'audio' or page.type == 'post' %}
         <div class="entry-meta">
           {% if page.type == 'audio' %}
             {% if page.season and page.episode %}
@@ -30,11 +31,12 @@
             {% endif %}
             <span class="item-label">{{ page.duration }}</span>
           {% endif %}
-          {% if page.published_at %}
+          {% if page.type == 'post' and page.published_at %}
             <time class="dt-published" datetime="{{ page.published_at|xmldatetime }}"
-                  itemprop="datePublished">{{ page.published_at.strftime('%b %d, %Y') }}</time>
+                  itemprop="datePublished">{{ page.published_at.strftime('%-d %B %Y') }}</time>
           {% endif %}
         </div>
+        {% endif %}
         <h1 class="p-name" itemprop="headline">{{ page.title }}</h1>
         {% if page.subtitle %}
           <h2 class="p-summary">{{ page.subtitle }}</h2>

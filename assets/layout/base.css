@@ -49,8 +49,8 @@ ul.links ul {
 }
 
 .inner {
-  max-width: 750px;
-  max-width: 75ch;
+  max-width: 700px;
+  max-width: 70ch;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;

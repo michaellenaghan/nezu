@@ -100,7 +100,7 @@
   padding: 0 32px;
   width: 100%;
   box-sizing: border-box;
-  /* background-color: var(--nz-c-bg); */
+  background-color: var(--nz-c-head-bg);
   z-index: 2;
 }
 

@@ -52,10 +52,7 @@
 .head_actions .theme-toggle {
   display: flex;
   align-items: center;
-  margin: 0 14px;
-}
-.head_actions .head_search {
-  margin-right: 0;
+  margin: 0 0 0 14px;
 }
 .head_actions button,
 .head_links .link_title {
@@ -70,6 +67,7 @@
   justify-content: center;
   /* width: 40px; */
   color: var(--nz-c-text-light);
+  margin: 0 0 0 14px;
 }
 .head_actions button:hover {
   color: var(--nz-c-text-strong);

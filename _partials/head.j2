@@ -6,7 +6,9 @@
           <span>{{ site.name }}</span>
         </a>
       </div>
+      {% if (nezu and nezu.primary_nav or site.primary_links) or (nezu and nezu.secondary_nav or site.secondary_links) %}
       <div id="HeadNav" class="head_links">
+        {% if nezu and nezu.primary_nav or site.primary_links %}
         <nav class="head_primary">
           {% if nezu and nezu.primary_nav %}
             {{ render_links(nezu.primary_nav, 'Primary') }}
@@ -14,6 +16,8 @@
             {{ render_links(site.primary_links, 'Primary') }}
           {% endif %}
         </nav>
+        {% endif %}
+        {% if nezu and nezu.secondary_nav or site.secondary_links %}
         <nav class="head_secondary">
           {% if nezu and nezu.secondary_nav %}
             {{ render_links(nezu.secondary_nav, 'Secondary') }}
@@ -21,7 +25,9 @@
             {{ render_links(site.secondary_links, 'Secondary') }}
           {% endif %}
         </nav>
+        {% endif %}
       </div>
+      {% endif %}
       <div class="head_actions">
         {% if features.algolia %}
         <div class="head_search">
@@ -50,6 +56,7 @@
             </svg>
           </label>
         </div>
+        {% if (nezu and nezu.primary_nav or site.primary_links) or (nezu and nezu.secondary_nav or site.secondary_links) %}
         <button type="button" class="head_menu js-toggle-menu" aria-label="mobile navigation" aria-expanded="false" aria-controls="HeadNav">
           <span class="hamburger">
             <span class="hamburger_1"></span>
@@ -57,6 +64,7 @@
             <span class="hamburger_3"></span>
           </span>
         </button>
+        {% endif %}
       </div>
     </div>
   </div>
